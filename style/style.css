@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+:root {
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --VerydarkblueMBG: hsl(217, 54%, 11%); /* (main BG) */
+  --VerydarkblueCBG: hsl(216, 50%, 16%); /*  (card BG)*/
+  --Verydarkblue: hsl(215, 32%, 27%); /*  (line)*/
+  --White: hsl(0, 0%, 100%); /*  */
+  --text: rgb(149, 169, 192);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  user-select: none;
+  color: var(--White);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container {
+  background-color: var(--VerydarkblueMBG);
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.perfil {
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid var(--Cyan);
+  box-shadow: 0px 0px 50px 0px var(--Cyan);
+}
+h1,h2{
+  text-shadow: 0 0 15px rgba(229, 249, 118, 0.5), 0 0 10px rgba(230, 242, 10, 0.5), 2px 2px 2px rgba(206,89,55,0);
+}
+
+.preview {
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.previewcards {
+  margin: 0 auto;
+  justify-items: center;
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+
+
+
+}
+
+.previewcards figure{
+  width: 300px;
+  padding: 2rem;
+  background-color: var(--VerydarkblueCBG);
+  border-radius: 1rem;
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.previewcards figure:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 50px 0px var(--Cyan);
+}
+
+.previewcards figcaption{
+  color: var(--Cyan);
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+.previewcards img{
+  border-radius: 1rem;
+  border: 4px solid var(--text);
+}
+
+
